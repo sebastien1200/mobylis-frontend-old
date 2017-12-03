@@ -1,0 +1,40 @@
+@import '../../styles.scss';
+
+.text-position h1{
+  text-align: center;
+  @include primary-font-size(2.7em);
+
+}
+.image-position {
+  max-height: 30em;
+}
+
+.image-delivery {
+  max-height: 25em;
+  padding: 2em;
+}
+
+.top-space {
+  height: 3em;
+}
+.desc-details {
+  @include primary-font-size(1.2em);
+  text-align: center;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 2em;
+
+  display: block;
+  word-wrap: break-word;
+}
+
+.description {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.desc-three {
+  margin-top: 2em;
+}

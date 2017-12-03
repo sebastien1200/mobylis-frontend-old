@@ -1,0 +1,76 @@
+@import '../../styles.scss';
+
+.text-position h1 {
+  text-align: center;
+  @include primary-font-size(2.7em);
+
+}
+
+.white-back {
+  background-color: white;
+  z-index: -1100;
+}
+
+.title-siege {
+  @include primary-font-size(2.8em);
+  text-align: center;
+
+  line-height: 2em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+
+}
+
+.image-position {
+  max-width: 18em;
+  z-index: -1000;
+}
+
+.image-delivery {
+  //max-height: 30em;
+  //max-width: 10em;
+  padding: 2em;
+}
+
+.top-space {
+  height: 3em;
+}
+
+.desc-details {
+  @include primary-font-size(1.2em);
+  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+.size-divider {
+  font-size: 1.5em;
+}
+.description {
+  @include primary-font-size(2em);
+
+  text-align: center;
+
+  line-height: 1em;
+
+  display: block;
+  word-wrap: break-word;
+
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.margin-bottom {
+  margin-bottom: 1em;
+
+}
+
+.margin-top {
+  margin-top: 1em;
+}
+
+.desc-three {
+  margin-top: 2em;
+}

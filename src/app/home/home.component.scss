@@ -1,0 +1,60 @@
+#primary-image {
+  z-index: -1;
+  max-height: 35em;
+  min-height: 25em;
+}
+
+.containerImage {
+  position: relative;
+}
+
+.image-position {
+  max-height: 27em
+}
+.text-box {
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+
+#slogan {
+  margin-top: 2em;
+  display: inline-block;
+
+  font-family: "Reem Kufi";
+  font-style: normal;
+  color: #FFF;
+  font-size: 4em;
+  font-size: 5vw;
+
+
+  padding-left: 1em;
+  padding-right: 1em;
+
+  background-color: rgba(0,0,0,0.5);
+}
+
+.description {
+
+
+  font-family: "Reem Kufi";
+  font-style: normal;
+  color: #FFF;
+  font-size: 2em;
+
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  background-color: rgba(0,0,0,0.75);
+}
+

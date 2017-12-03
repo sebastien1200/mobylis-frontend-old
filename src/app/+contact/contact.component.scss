@@ -1,0 +1,49 @@
+@import '../../styles';
+
+.logo-image{
+  max-width: 25em;
+  margin: 2em;
+}
+
+#segment-position{
+  margin-top: 8em;
+  margin-bottom: 8em;
+}
+
+.text {
+  @include primary-font-size(1.3em);
+  line-height: 2em;
+  display: block;
+  color: dimgrey;
+
+}
+
+.text-mobile{
+  @include primary-font-size(1.3em);
+  text-align: center;
+  line-height: 2em;
+  color: dimgrey;
+}
+
+
+.text-centered {
+  text-align: center;
+  @include primary-font-size(3em);
+  margin-bottom: 2em;
+  margin-top: 2em;
+  display: block;
+  word-wrap: break-word;
+
+}
+.phone-centered {
+  text-align: center;
+  @include primary-font-size(2em);
+  margin-bottom: 2em;
+  margin-top: 2em;
+
+
+}
+.y-color {
+  color: #97c00e;
+
+}

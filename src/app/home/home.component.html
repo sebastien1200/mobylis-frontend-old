@@ -1,0 +1,33 @@
+<div class="containerImage">
+  <div class="text-box">
+    <h1 id="slogan">Votre Santé, nos bureaux</h1>
+  </div>
+  <img class="ui fluid centered image" src="/assets/HAG-Futu-2.jpg" id="primary-image"/>
+</div>
+
+
+<div *ngFor="let row of rows">
+
+  <div class="ui stackable two column grid">
+    <div class="column">
+      <img class="ui fluid image image-position" src="{{row.srcLeft}}"/>
+    </div>
+    <div class="column middle aligned">
+      <h1 class="description">{{row.textRight}}</h1>
+    </div>
+  </div>
+
+  <div class="ui stackable two column grid">
+    <div class="column middle aligned">
+      <h1 class="description">{{row.textLeft}}</h1>
+    </div>
+    <div class="column">
+      <img class="ui fluid image image-position" src="{{row.srcRight}}"/>
+    </div>
+  </div>
+
+</div>
+
+
+
+

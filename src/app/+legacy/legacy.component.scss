@@ -1,0 +1,7 @@
+@import '../../styles.scss';
+
+
+.legacy-position {
+  @include primary-font;
+  margin: 2em;
+}

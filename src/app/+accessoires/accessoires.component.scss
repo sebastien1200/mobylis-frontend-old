@@ -1,0 +1,46 @@
+@import '../../styles.scss';
+
+
+.image-position {
+  max-height: 35em;
+  max-width: 40em;
+  z-index: -1000;
+  margin-top: 2em;
+
+}
+
+.image-position-large {
+  max-height: 35em;
+  max-width: 30em;
+  z-index: -1000;
+
+}
+
+.image-three {
+  max-width: 25em;
+  margin-top: 2em;
+}
+
+
+.description {
+
+  @include primary-font-size(2.7em);
+
+  text-align: center;
+
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  display: block;
+  word-wrap: break-word;
+
+}
+
+
