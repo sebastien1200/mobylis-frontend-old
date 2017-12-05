@@ -4,6 +4,7 @@
 /tmp
 /out-tsc
 /dist
+/semantic/dist/
 # dependencies
 /node_modules
 
@@ -41,5 +42,4 @@ testem.log
 Thumbs.db
 /functions/node_modules
 /public/
-!/semantic/dist/
 
