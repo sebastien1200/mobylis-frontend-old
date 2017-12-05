@@ -1,5 +1,6 @@
 {
   "projects": {
-    "mobylis-test": "mobylis-test"
+    "mobylis": "mobylis-fr",
+    "default": "mobylis-fr"
   }
 }

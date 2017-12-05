@@ -5,6 +5,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "firebaseLocalHF": "firebase serve --only hosting,functions",
+    "firebaseLocalH": "firebase serve --only hosting",
+    "firebaseLocalF": "firebase serve --only functions",
+    "firebase": "firebase serve --only hosting,functions",
+    "firebaseDeploy": "firebase deploy",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

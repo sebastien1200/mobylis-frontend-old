@@ -43,3 +43,4 @@ testem.log
 Thumbs.db
 /functions/node_modules
 /public/
+!/semantic/dist/

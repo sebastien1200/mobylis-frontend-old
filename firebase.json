@@ -1,8 +1,14 @@
 {
   "hosting": {
-  "public": "public",
-  "rewrites": [
-    { "source": "/posts/**", "function": "post" }
-  ]
-}
+    "public": "dist",
+    "rewrites": [
+      {
+        "source": "/post/test",
+        "function": "helloWorld"
+      }
+    ]
+  },
+  "functions": {
+    "predeploy": "npm --prefix functions run build"
+  }
 }
