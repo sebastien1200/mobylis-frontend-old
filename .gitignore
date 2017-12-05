@@ -1,7 +1,6 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
 /tmp
 /out-tsc
 /semantic/dist/*
@@ -44,3 +43,5 @@ Thumbs.db
 /functions/node_modules
 /public/
 !/semantic/dist/
+/dist/
+semantic/dist/
