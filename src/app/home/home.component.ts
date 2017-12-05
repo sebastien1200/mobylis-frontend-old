@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Row} from "../shared";
+import {Row} from '../shared/row';
 
 @Component({
   selector: 'app-home',

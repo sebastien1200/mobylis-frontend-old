@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "public",
       "assets": [
         "assets",
         "favicon.ico"
@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-        "assets/semantic.min.css"
+        "./assets/semantic.min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

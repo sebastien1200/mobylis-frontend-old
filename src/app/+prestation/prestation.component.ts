@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {SideRow} from "../shared";
+import {SideRow} from '../shared/side-row';
 
 @Component({
   selector: 'app-prestation',
