@@ -1,0 +1,5 @@
+# Ignore everything
+semantic/dist/
+dist
+.idea/
+node_modules/
