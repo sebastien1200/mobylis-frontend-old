@@ -1,4 +1,4 @@
-# MobylisFrontend [![Build Status](https://travis-ci.org/Seb69/mobylis-frontend.svg?branch=master)][travis-badge-url]
+# MobylisFrontend  ![Build Status](https://travis-ci.org/Seb69/mobylis-frontend.svg?branch=master)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
 
