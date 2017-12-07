@@ -4,5 +4,6 @@ node_js:
 install: true
 script:
   - npm install
+  - cd functions && npm install
   - npm install -g firebase-tools
   - firebase deploy --token "$FIREBASE_TOKEN"
