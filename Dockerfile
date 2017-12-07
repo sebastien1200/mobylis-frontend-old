@@ -4,6 +4,7 @@ FROM node:$NODE_VERSION-alpine
 WORKDIR /home
 RUN npm install -g @angular/cli@$ANGULAR_CLI_VERSION firebase-tools
 COPY . .
-RUN npm install
-RUN ng build --prod
-RUN
+RUN npm install && ng build --prod
+#RUN ng build --prod
+RUN firebase deploy --token "$FIREBASE_TOKEN" --only functions
+RUN cd functions && npm install && npm

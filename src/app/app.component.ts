@@ -15,6 +15,9 @@ export class AppComponent implements OnInit {
     this.httpClient.get('/post/test', { responseType: 'text' }).subscribe(result => {
       console.log(result);
     });
+    this.httpClient.get('/api/test', { responseType: 'text' }).subscribe(result => {
+      console.log(result);
+    });
   }
 
 }
