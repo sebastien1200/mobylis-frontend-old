@@ -5,13 +5,13 @@
       {
         "source": "/post/test",
         "function": "helloWorld"
-      },
-      {
-        "source": "/api/*",
-        "destination": "http://localhost:8080/test",
-        "type": 200
       }
-    ]
+    ],
+    "redirects": [ {
+      "source" : "/api/test",
+      "destination" : "http://localhost:8080/test",
+      "type" : 200
+    } ]
   },
   "functions": {
     "predeploy": "npm --prefix functions run build"
