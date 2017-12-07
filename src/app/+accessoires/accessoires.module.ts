@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AccessoiresComponent} from './accessoires.component';
-import {AccessoiresRoutingModule} from "./accessoires-routing.module";
+import {AccessoiresRoutingModule} from './accessoires-routing.module';
 
 @NgModule({
   imports: [
