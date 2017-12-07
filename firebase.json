@@ -10,7 +10,7 @@
     "redirects": [ {
       "source" : "/api/test",
       "destination" : "http://localhost:8080/test",
-      "type" : 200
+      "type" : 301
     } ]
   },
   "functions": {
