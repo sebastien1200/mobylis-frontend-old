@@ -5,6 +5,10 @@ install: true
 cache:
   directories:
     - node_modules
+notifications:
+  slack:
+    on_success: never
+    on_failure: never
 script:
   - npm install
   - npm run build
