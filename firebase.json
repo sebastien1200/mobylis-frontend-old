@@ -6,12 +6,10 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "/post/test",
-        "function": "helloWorld"
-      }
-    ],
+    "rewrites": [{
+      "source": "**",
+      "function": "ssr"
+    }],
     "redirects": [ {
       "source" : "/api/test",
       "destination" : "http://localhost:8080/test",
