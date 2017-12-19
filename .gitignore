@@ -47,3 +47,4 @@ Thumbs.db
 /functions/dist/
 /functions/dist-ssr/
 functions/etc/
+/functions/lib/

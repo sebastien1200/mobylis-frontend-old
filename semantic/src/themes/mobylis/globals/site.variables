@@ -17,20 +17,20 @@
 @lineHeight          : 1.4285em;
 @textColor           : rgba(0, 0, 0, 0.87);
 
-/*-------------------
-       Fonts
---------------------*/
-
-@fontName          : 'Reem+Kufi';
-@fontSmoothing     : antialiased;
-
-@headerFont        : @fontName, sans-serif;
-@pageFont          : @fontName, sans-serif;
-
-@googleFontName    : @fontName;
-@importGoogleFonts : true;
-@googleFontSizes   : '400';
-@googleSubset      : 'latin';
-
-@googleProtocol    : 'https://';
-@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
+///*-------------------
+//       Fonts
+//--------------------*/
+//
+//@fontName          : 'Reem+Kufi';
+//@fontSmoothing     : antialiased;
+//
+//@headerFont        : @fontName, sans-serif;
+//@pageFont          : @fontName, sans-serif;
+//
+//@googleFontName    : @fontName;
+//@importGoogleFonts : true;
+//@googleFontSizes   : '400';
+//@googleSubset      : 'latin';
+//
+//@googleProtocol    : 'https://';
+//@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
