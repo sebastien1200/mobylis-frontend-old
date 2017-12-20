@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "install": "npm install && cd functions && npm install",
+    "installAll": "npm install && cd functions && npm install",
     "build": "ng build --prod && ng build ",
     "serve": "ng build --prod && ng build --prod && cp -R dist ./functions/. && rm dist/index.html && firebase serve",
     "lint": "ng lint",
