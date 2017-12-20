@@ -1,7 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url("https://fonts.googleapis.com/css?family=Reem+Kufi:400&subset=latin");
-
 $primary-font-family: Reem Kufi;
 
 @mixin primary-font() {
@@ -11,4 +9,3 @@ $primary-font-family: Reem Kufi;
   font-family: $primary-font-family;
   font-size: $size;
 }
-

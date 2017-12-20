@@ -5,13 +5,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "firebaseLocalHF": "firebase serve --only hosting,functions",
-    "firebaseLocalH": "firebase serve --only hosting",
-    "firebaseLocalF": "firebase serve --only functions",
-    "firebase": "firebase serve --only hosting,functions",
-    "firebaseDeploy": "firebase deploy",
-    "build": "ng build --prod",
-    "test": "",
+    "install": "npm install && cd functions && npm install",
+    "build": "ng build --prod && ng build ",
+    "serve": "ng build --prod && ng build --prod && cp -R dist ./functions/. && rm dist/index.html && firebase serve",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
