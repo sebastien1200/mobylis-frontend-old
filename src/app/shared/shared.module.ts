@@ -11,7 +11,8 @@ import CloudinaryConfiguration from '../vendor/cloudinary/cloudinary-configurati
     CloudinaryModule.forRoot({Cloudinary}, { cloud_name: 'dqismn81g' } as CloudinaryConfiguration)
   ],
   exports: [
-    CommonModule
+    CommonModule,
+    ImageComponent
   ],
   declarations: [ImageComponent]
 })
