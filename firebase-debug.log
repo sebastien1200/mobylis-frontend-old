@@ -1,0 +1,56 @@
+[debug] [2017-12-23T18:03:37.758Z] ----------------------------------------------------------------------
+[debug] [2017-12-23T18:03:37.760Z] Command:       /usr/local/Cellar/node/8.9.1/bin/node /usr/local/bin/firebase serve --only functions,hosting
+[debug] [2017-12-23T18:03:37.760Z] CLI Version:   3.16.0
+[debug] [2017-12-23T18:03:37.760Z] Platform:      darwin
+[debug] [2017-12-23T18:03:37.760Z] Node Version:  v8.9.1
+[debug] [2017-12-23T18:03:37.761Z] Time:          Sat Dec 23 2017 19:03:37 GMT+0100 (CET)
+[debug] [2017-12-23T18:03:37.761Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-23T18:03:37.774Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-23T18:03:37.775Z] > authorizing via FIREBASE_TOKEN environment variable
+[debug] [2017-12-23T18:03:37.776Z] > refreshing access token with scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-23T18:03:37.776Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/01t3tPfovwL0bHPp44OJNU1ctUbTCW7f--OCwaGj5UU',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email openid https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform' } 
+ Sat Dec 23 2017 19:03:37 GMT+0100 (CET)
+[debug] [2017-12-23T18:03:38.023Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-23T18:03:38.024Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/mobylis-fr  
+  
+ Sat Dec 23 2017 19:03:38 GMT+0100 (CET)
+[debug] [2017-12-23T18:03:38.819Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-23T18:03:38.820Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/mobylis-fr/tokens  
+  
+ Sat Dec 23 2017 19:03:38 GMT+0100 (CET)
+[debug] [2017-12-23T18:03:39.602Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/ANDRE/Documents/MOBYLIS_v2/mobylis-frontend'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2017-12-23T18:03:40.128Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/mobylis-fr  
+  
+ Sat Dec 23 2017 19:03:40 GMT+0100 (CET)
+[debug] [2017-12-23T18:03:40.129Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/mobylis-fr/apiKeys  
+  
+ Sat Dec 23 2017 19:03:40 GMT+0100 (CET)
+[debug] [2017-12-23T18:03:40.129Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/mobylis-fr  
+  
+ Sat Dec 23 2017 19:03:40 GMT+0100 (CET)
+[debug] [2017-12-23T18:03:41.312Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-23T18:03:41.315Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-23T18:03:41.315Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/382203195999/clients/_:getWebAppConfig  
+  
+ Sat Dec 23 2017 19:03:41 GMT+0100 (CET)
+[debug] [2017-12-23T18:03:41.458Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-23T18:03:42.232Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: dist
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[info] [hosting] Rewriting / to local function ssr
+[info] [hosting] Rewriting / to local function ssr
+[info] ✔  functions: helloWorld: http://localhost:5001/mobylis-fr/us-central1/helloWorld
+[info] ✔  functions: ssr: http://localhost:5001/mobylis-fr/us-central1/ssr
+[info] [hosting] Rewriting / to local function ssr
+[info] [hosting] Rewriting /post/test to local function ssr
