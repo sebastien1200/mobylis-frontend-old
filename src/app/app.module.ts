@@ -6,9 +6,7 @@ import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './home/home.component';
 import {HttpClientModule} from '@angular/common/http';
-import { Cloudinary } from 'cloudinary-core';
-import {CloudinaryModule} from './vendor/cloudinary/cloudinary.module';
-import CloudinaryConfiguration from './vendor/cloudinary/cloudinary-configuration.class';
+import {SharedModule} from './shared/shared.module';
 
 const APP_ID = 'angular-universal-firebase';
 
@@ -20,6 +18,7 @@ const APP_ID = 'angular-universal-firebase';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModule,
     BrowserModule.withServerTransition({ appId: APP_ID }),
     HttpClientModule
   ],
