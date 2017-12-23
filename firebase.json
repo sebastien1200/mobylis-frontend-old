@@ -6,32 +6,33 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [{
-      "source": "**",
-      "function": "ssr"
-    }],
-    "redirects": [ {
-      "source" : "/api/test",
-      "destination" : "http://localhost:8080/test",
-      "type" : 301
-    } ]
-  },
-  "functions": {
-    "predeploy": "npm --prefix functions run build"
-  },
-  // Add the "headers" section within "hosting".
-  "headers": [ {
-    "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
-    "headers" : [ {
-      "key" : "Access-Control-Allow-Origin",
-      "value" : "*"
-    } ]
-  }, {
-    "source" : "**/*.@(jpg|jpeg|gif|png)",
-    "headers" : [ {
-      "key" : "Cache-Control",
-      "value" : "max-age=7200"
-    } ]
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "ssr"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/api/test",
+        "destination": "http://localhost:8080/test",
+        "type": 301
+      }
+    ]
+    "functions": {
+      "predeploy": "npm --prefix functions run build"
+    },
+    // Add the "headers" section within "hosting".
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=7200"
+          }
+        ]
+      }
+    ]
   }
-  ]
 }
