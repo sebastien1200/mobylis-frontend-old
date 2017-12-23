@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './home/home.component';
 import {HttpClientModule} from '@angular/common/http';
-import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
 import { Cloudinary } from 'cloudinary-core';
+import {CloudinaryModule} from './vendor/cloudinary/cloudinary.module';
+import CloudinaryConfiguration from './vendor/cloudinary/cloudinary-configuration.class';
 
 const APP_ID = 'angular-universal-firebase';
 

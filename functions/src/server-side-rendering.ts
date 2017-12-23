@@ -19,4 +19,5 @@ app.get('**', function(req, res) {
     document: index
   }).then(html => res.status(200).send(html));
 });
+
 export const ssr = functions.https.onRequest(app);
