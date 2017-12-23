@@ -21,7 +21,6 @@ const APP_ID = 'angular-universal-firebase';
     BrowserModule,
     AppRoutingModule,
     BrowserModule.withServerTransition({ appId: APP_ID }),
-    CloudinaryModule.forRoot({Cloudinary}, { cloud_name: 'dqismn81g' } as CloudinaryConfiguration),
     HttpClientModule
   ],
   providers: [],
