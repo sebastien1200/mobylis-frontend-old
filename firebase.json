@@ -18,7 +18,7 @@
         "destination": "http://localhost:8080/test",
         "type": 301
       }
-    ]
+    ],
     "functions": {
       "predeploy": "npm --prefix functions run build"
     },
