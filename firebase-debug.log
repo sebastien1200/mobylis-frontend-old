@@ -54,3 +54,138 @@
 [info] ✔  functions: ssr: http://localhost:5001/mobylis-fr/us-central1/ssr
 [info] [hosting] Rewriting / to local function ssr
 [info] [hosting] Rewriting /post/test to local function ssr
+[debug] [2017-12-23T18:14:16.545Z] ----------------------------------------------------------------------
+[debug] [2017-12-23T18:14:16.547Z] Command:       /usr/local/Cellar/node/8.9.1/bin/node /usr/local/bin/firebase deploy
+[debug] [2017-12-23T18:14:16.547Z] CLI Version:   3.16.0
+[debug] [2017-12-23T18:14:16.547Z] Platform:      darwin
+[debug] [2017-12-23T18:14:16.547Z] Node Version:  v8.9.1
+[debug] [2017-12-23T18:14:16.548Z] Time:          Sat Dec 23 2017 19:14:16 GMT+0100 (CET)
+[debug] [2017-12-23T18:14:16.548Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-23T18:14:16.561Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-23T18:14:16.561Z] > authorizing via FIREBASE_TOKEN environment variable
+[debug] [2017-12-23T18:14:16.562Z] > refreshing access token with scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-23T18:14:16.562Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/01t3tPfovwL0bHPp44OJNU1ctUbTCW7f--OCwaGj5UU',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email openid https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform' } 
+ Sat Dec 23 2017 19:14:16 GMT+0100 (CET)
+[debug] [2017-12-23T18:14:16.838Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-23T18:14:16.841Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/mobylis-fr  
+  
+ Sat Dec 23 2017 19:14:16 GMT+0100 (CET)
+[debug] [2017-12-23T18:14:17.597Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-23T18:14:17.598Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/mobylis-fr/tokens  
+  
+ Sat Dec 23 2017 19:14:17 GMT+0100 (CET)
+[debug] [2017-12-23T18:14:18.255Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'mobylis-fr'...
+[info] 
+[info] i  deploying functions, hosting
+[debug] [2017-12-23T18:14:19.153Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "./node_modules/.bin/tslint -p tslint.json && ./node_modules/.bin/tsc",
+    "serve": "npm run build && firebase serve --only functions",
+    "shell": "npm run build && firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@angular/animations": "^5.1.1",
+    "@angular/common": "^5.1.1",
+    "@angular/compiler": "^5.1.1",
+    "@angular/core": "^5.1.1",
+    "@angular/forms": "^5.1.1",
+    "@angular/http": "^5.1.1",
+    "@angular/platform-browser": "^5.1.1",
+    "@angular/platform-browser-dynamic": "^5.1.1",
+    "@angular/platform-server": "^5.1.1",
+    "@angular/router": "^5.1.1",
+    "cloudinary-core": "^2.4.0",
+    "express": "^4.15.4",
+    "firebase-admin": "~5.4.2",
+    "firebase-functions": "^0.7.5",
+    "rxjs": "^5.5.2",
+    "zone.js": "^0.8.14"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.6.1",
+    "tslint": "^5.8.0",
+    "typescript": "^2.4.2"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2017-12-23T18:14:19.158Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/mobylis-fr?view=CONSUMER_VIEW  
+  
+ Sat Dec 23 2017 19:14:19 GMT+0100 (CET)
+[debug] [2017-12-23T18:14:19.159Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/mobylis-fr?view=CONSUMER_VIEW  
+  
+ Sat Dec 23 2017 19:14:19 GMT+0100 (CET)
+[debug] [2017-12-23T18:14:20.513Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-23T18:14:20.568Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2017-12-23T18:14:20.570Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/mobylis-fr  
+  
+ Sat Dec 23 2017 19:14:20 GMT+0100 (CET)
+[debug] [2017-12-23T18:14:20.570Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/mobylis-fr/apiKeys  
+  
+ Sat Dec 23 2017 19:14:20 GMT+0100 (CET)
+[debug] [2017-12-23T18:14:21.530Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-23T18:14:21.771Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2017-12-23T18:15:05.262Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/mobylis-fr/configs  
+  
+ Sat Dec 23 2017 19:15:05 GMT+0100 (CET)
+[debug] [2017-12-23T18:15:05.647Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (11.94 MB) for uploading
+[debug] [2017-12-23T18:15:16.974Z] >>> HTTP REQUEST GET https://www.googleapis.com/storage/v1/b/staging.mobylis-fr.appspot.com  
+  
+ Sat Dec 23 2017 19:15:16 GMT+0100 (CET)
+[debug] [2017-12-23T18:15:17.468Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-23T18:15:17.469Z] >>> HTTP REQUEST POST https://www.googleapis.com/upload/storage/v1/b/staging.mobylis-fr.appspot.com/o?uploadType=media&name=firebase-functions-source  
+ ReadStream {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 65536,
+     buffer: BufferList { head: [Object], tail: [Object], length: 1 },
+     length: 65536,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: false,
+     endEmitted: false,
+     reading: false,
+     sync: false,
+     needReadable: false,
+     emittedReadable: true,
+     readableListening: false,
+     resumeScheduled: false,
+     destroyed: false,
+     defaultEncoding: 'utf8',
+     awaitDrain: 0,
+     readingMore: false,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: '/var/folders/8b/0c32rgzd1ss09mxgwjztdzr00000gn/T/firebase-functions-77707JzDyspJrm2y9.zip',
+  fd: 18,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: undefined,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 65536 } 
+ Sat Dec 23 2017 19:15:17 GMT+0100 (CET)

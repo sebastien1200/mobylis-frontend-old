@@ -19,9 +19,6 @@
         "type": 301
       }
     ],
-    "functions": {
-      "predeploy": "npm --prefix functions run build"
-    },
     "headers": [
       {
         "source": "**/*.@(jpg|jpeg|gif|png)",
@@ -33,5 +30,8 @@
         ]
       }
     ]
+  },
+  "functions": {
+    "predeploy": "npm --prefix functions run build"
   }
 }
