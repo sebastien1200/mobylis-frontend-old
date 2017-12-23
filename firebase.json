@@ -22,7 +22,6 @@
     "functions": {
       "predeploy": "npm --prefix functions run build"
     },
-    // Add the "headers" section within "hosting".
     "headers": [
       {
         "source": "**/*.@(jpg|jpeg|gif|png)",
