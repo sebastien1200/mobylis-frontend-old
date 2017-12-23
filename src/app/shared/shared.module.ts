@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Cloudinary } from 'cloudinary-core';
-import {CloudinaryModule} from '../vendor/cloudinary/cloudinary.module';
-import CloudinaryConfiguration from '../vendor/cloudinary/cloudinary-configuration.class';
 import {ImageComponent} from './image/image.component';
+import {CloudinaryModule} from './image/cloudinary/cloudinary.module';
+import CloudinaryConfiguration from './image/cloudinary/cloudinary-configuration.class';
 
 @NgModule({
   imports: [
